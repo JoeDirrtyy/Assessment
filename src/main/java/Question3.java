@@ -4,12 +4,12 @@ public class Question3 {
 
     public static void main(String[] args) {
         int[] array = {20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1,0};
-        for (int x = 0; x < 11; x++) {
-            if (array[x] % 2 != 9) {
-
-
+        int x = 0;
+        while (x < 11) {
+            if (array[x] != 9) {
                 System.out.println(array[x]);
             }
+            x++;
         }
     }
 }
