@@ -17,23 +17,23 @@ public class Question1 {
         if (miles >= 5 && miles <= 15) {
             total = total + 5;
         }
-        if (miles >= 16 && miles <= 25) 
+        if (miles >= 16 && miles <= 25) {
             total = total + 10;
         }
         if (miles >= 26 && miles <= 50){
             total = total + 15;
         }else{
             total = total + 20;}
-        System.out.println("Product " + product + "\n" + "Qty " + qty + "\n" + "Price $" + price + "\n" + "Miles " + miles);
+        System.out.println("Product: " + product + "\n" + "Qty: " + qty + "\n" + "Price: $" + price + "\n" + "Miles: " + miles);
         System.out.println("====================");
-        return "total $" + total;
+        return "total: $" + total;
 
     }
 
     public static void main(String[] args) {
         System.out.println(getReciept("rice", 20, 5.0, 10 ));
         System.out.println(getReciept("beans", 10, 2.0, 30 ));
-
+        System.out.println(getReciept("cake", 200, 5.75, 278) );
 
 
     }
